@@ -32,6 +32,7 @@ export default {
 <style lang="scss" scoped>
 #site_header {
   margin: 1rem 0;
+  padding: 0.5rem;
 
   img {
     height: 80px;

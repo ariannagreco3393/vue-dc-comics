@@ -9,10 +9,10 @@
       <div class="container">
         <div class="row">
             <div class="col-2" v-for="({src, titolo}, index) in secondaryMenu" :key="index">
-                <div class="wrapper">
+                <a class="wrapper">
                     <img :src="src" :alt="titolo">
                     <h5>{{titolo}}</h5>
-                </div>
+                </a>
             </div>
         </div>
       </div>
