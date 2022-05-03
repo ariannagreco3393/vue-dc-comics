@@ -4,10 +4,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"/>
-    <siteHeader/>
+      rel="stylesheet"
+    />
+    <siteHeader />
     <!-- /#site_header -->
-    <main id="site_main"></main>
+    <siteMain/>
     <!-- /#site_main -->
     <footer id="site_footer"></footer>
     <!-- /#site_footer -->
@@ -15,19 +16,21 @@
 </template>
 
 <script>
-import siteHeader from './components/headerComponent.vue'
+import siteHeader from "./components/headerComponent.vue";
+import siteMain from "./components/mainComponent.vue";
 
 export default {
   name: "App",
   components: {
-    siteHeader
+    siteHeader,
+    siteMain
   },
 };
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* common rules */
@@ -45,4 +48,6 @@ img {
 /* importazioni */
 
 @import "@/assets/sass/_grid_system.scss";
+
+
 </style>
