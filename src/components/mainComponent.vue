@@ -5,51 +5,19 @@
         <div class="row">content goes here</div>
       </div>
     </section>
-    <section class="secondary_menu">
-      <div class="container">
-        <div class="row">
-            <div class="col-2" v-for="({src, titolo}, index) in secondaryMenu" :key="index">
-                <a class="wrapper">
-                    <img :src="src" :alt="titolo">
-                    <h5>{{titolo}}</h5>
-                </a>
-            </div>
-        </div>
-      </div>
-    </section>
+    <secondaryMenu/>
   </main>
 </template>
 
 
 <script>
+import secondaryMenu from '@/components/secondaryMenuComponent.vue'
 export default {
     name: 'mainComponent',
-    data() {
-       return {
-           secondaryMenu: [
-               {
-                   src:'@/assets/img/buy-comics-digital-comics.png',
-                   titolo: 'DIGITAL COMICS'
-               },
-               {
-                   src:'@/assets/img/buy-comics-merchandise.png',
-                   titolo: 'DC MERCHINDISE'
-               },
-               {
-                   src:'@/assets/img/buy-comics-subscriptions.png',
-                   titolo: 'SUBSCRIPTION'
-               },
-               {
-                   src:'@/assets/img/buy-comics-shop-locator.png',
-                   titolo: 'COMIC SHOP LOCATOR'
-               },
-               {
-                   src:'@/assets/img/buy-comics-dc-power-visa.svg',
-                   titolo: 'DC POWER VISA'
-               }
-           ]
-       } 
-    }
+    components: {
+        secondaryMenu
+    },
+   
 }
 </script>
 
@@ -62,12 +30,6 @@ export default {
     height: 100px;
     background-color: #1c1c1c;
     color: white;
-  }
-
-  .secondary_menu {
-    height: 130px;
-    width: 100%;
-    background-color: rgb(0, 130, 249);
   }
 }
 </style>

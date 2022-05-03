@@ -7,7 +7,9 @@
         </div>
         <div class="col-8">
           <nav>
-            <a href="#" v-for="(voce, index) in mainMenu" :key="index">{{voce}}</a>
+            <a href="#" v-for="(voce, index) in mainMenu" :key="index">{{
+              voce
+            }}</a>
           </nav>
         </div>
       </div>
@@ -18,15 +20,24 @@
 
 <script>
 export default {
-    name: 'headerComponent',
-    data() {
-        return {
-            mainMenu: ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 
-            'VIDEOS', 'FANS', 'NEWS', 'SHOP']
-        }
-    }
-    
-}
+  name: "headerComponent",
+  data() {
+    return {
+      mainMenu: [
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
+        "TV",
+        "GAMES",
+        "COLLECTIBLES",
+        "VIDEOS",
+        "FANS",
+        "NEWS",
+        "SHOP",
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -48,7 +59,7 @@ export default {
   }
 
   nav {
-    .active {
+    a:hover {
       color: rgb(0, 130, 249);
       border-bottom: 4px solid rgb(0, 130, 249);
     }

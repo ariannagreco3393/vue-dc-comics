@@ -35,19 +35,11 @@ export default {
   font-family: "Lato", sans-serif;
 }
 
-/* common rules */
+/* style*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import '@/assets/sass/style';
 
-img {
-  max-width: 100%;
-}
-
-/* importazioni */
+/* grid system */
 
 @import "@/assets/sass/_grid_system.scss";
 
