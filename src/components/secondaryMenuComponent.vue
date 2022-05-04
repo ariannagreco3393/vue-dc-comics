@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col" v-for="({src, text}, index) in secondaryMenu" :key="index">
                 <a class="wrapper">
-                    <img :src="require(`@/assets${src}`)">
+                    <img :src="src">
                     <span>{{text}}</span>
                 </a>
             </div>
@@ -20,23 +20,23 @@ export default {
        return {
            secondaryMenu: [
                {
-                   src:'/img/buy-comics-digital-comics.png',
+                   src: require("@/assets/img/buy-comics-digital-comics.png"),
                    text: 'DIGITAL COMICS'
                },
                {
-                   src:'/img/buy-comics-merchandise.png',
+                   src:require("@/assets/img/buy-comics-merchandise.png"),
                    text: 'DC MERCHINDISE'
                },
                {
-                   src:'/img/buy-comics-subscriptions.png',
+                   src: require("@/assets/img/buy-comics-subscriptions.png"),
                    text: 'SUBSCRIPTION'
                },
                {
-                   src:'/img/buy-comics-shop-locator.png',
+                   src:require("@/assets/img/buy-comics-shop-locator.png"),
                    text: 'COMIC SHOP LOCATOR'
                },
                {
-                   src:'/img/buy-dc-power-visa.svg',
+                   src:require("@/assets/img/buy-dc-power-visa.svg"),
                    text: 'DC POWER VISA'
                }
            ]
