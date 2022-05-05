@@ -2,10 +2,10 @@
   <div class="col-2">
     <div class="card">
       <div class="img_card">
-        <img :src="thumb" alt="" />
+        <img :src="card.thumb" alt="" />
       </div>
       <div class="text_card">
-        <p>{{ series }}</p>
+        <p>{{ card.series }}</p>
       </div>
     </div>
   </div>
@@ -15,8 +15,7 @@
 export default {
   name: "fumettiCardComponent",
   props: {
-    thumb: String,
-    series: String,
+    card: Object
   },
 };
 </script>

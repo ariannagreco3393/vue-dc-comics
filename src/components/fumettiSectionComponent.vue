@@ -2,7 +2,7 @@
     <section class="fumetti_section">
       <div class="container">
         <div class="row">
-          <fumettiCardComponent v-for="(card, index) in cards" :key="index" :thumb="card.thumb" :series="card.series"/>
+          <fumettiCardComponent :card="card" v-for="(card, index) in cards" :key="index" :thumb="card.thumb" :series="card.series"/>
           <div class="btn">
             <a href="#">LOAD MORE</a>
           </div>
