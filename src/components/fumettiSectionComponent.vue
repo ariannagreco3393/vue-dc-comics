@@ -120,7 +120,7 @@ export default {
   .fumetti_section {
     padding: 2rem;
     width: 100%;
-    background-color: #1c1c1c;
+    background-color: $bg-main;
     color: white;
   }
   
@@ -133,9 +133,9 @@ export default {
     justify-content: center;
     a {
       text-decoration: none;
-      background-color: rgb(0, 130, 249);
+      background-color: $dc-primary;
       padding: 0.8rem 3rem;
-      color: white;
+      color: $white;
       font-size: 13px;
       font-weight: 700;
     }

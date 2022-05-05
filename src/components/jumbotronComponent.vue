@@ -27,7 +27,7 @@ export default {
     }
 
     .label {
-      background-color: rgb(0, 130, 249);
+      background-color: $dc-primary;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -37,7 +37,7 @@ export default {
       bottom: -1rem;
 
       p {
-        color: white;
+        color: $white;
         font-weight: 700;
       }
     }

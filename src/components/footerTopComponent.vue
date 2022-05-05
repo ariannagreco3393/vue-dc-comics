@@ -134,37 +134,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer_top {
-  height: 380px;
-  background-image: url("@/assets/img/footer-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 
-  .bg_logo {
-    height: 380px;
-    background-image: url("@/assets/img/dc-logo-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  h3 {
-    color: white;
-    margin-top: 1.5rem;
-  }
-
-  ul {
-    list-style: none;
-    margin-top: 0.5rem;
-  }
-
-  li {
-    font-size: 13px;
-    padding: 0.2rem;
-  }
-
-  a {
-    color: gray;
-    text-decoration: none;
-  }
-}
 </style>

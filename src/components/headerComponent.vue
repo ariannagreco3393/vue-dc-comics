@@ -81,32 +81,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#site_header {
-  margin: 1rem 0;
-  padding: 0.1rem;
 
-  img {
-    height: 80px;
-  }
-
-  a {
-    text-decoration: none;
-    padding: 2.5rem 0rem;
-    font-size: 14px;
-    font-weight: 700;
-    color: #464646;
-    margin: 0 0.75rem;
-
-    &:hover, &.active {
-      color: rgb(0, 130, 249);
-      border-bottom: 4px solid rgb(0, 130, 249);
-    }
-  }
-
-  .col-8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 </style>

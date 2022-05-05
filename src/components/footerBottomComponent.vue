@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
     .footer_bottom {
   padding: 2rem;
-  background-color: #303030;
+  background-color: $footer;
 
   .call-to-action{
     display: flex;
@@ -40,11 +40,11 @@ export default {
 
   button {
     height: 100%;
-    border: 2px solid #0582f9;
+    border: 2px solid $dc-primary;
     border-radius: 0;
     padding: 0.8rem;
     background-color: transparent;
-    color: white;
+    color: $white;
   }
 
   .follow-us {
@@ -55,7 +55,7 @@ export default {
 
   h3 {
       margin-right: 1rem;
-      color: #0582f9;
+      color: $dc-primary;
   }
 
   img {

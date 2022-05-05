@@ -1,5 +1,9 @@
 $dc-primary: #0282f9;
 $bg-main: #1c1c1c;
+$dark-gray: #464646;
+$light-gray:  rgb(139, 136, 136);
+$white: #ffffff;
+$footer: #303030;
 
 
 //mixin mi permette di importare la classe con @include
@@ -8,5 +12,5 @@ $bg-main: #1c1c1c;
     border-radius: 0;
     padding: 0.8rem;
     background-color: transparent;
-    color: white;
+    color: $white;
 }

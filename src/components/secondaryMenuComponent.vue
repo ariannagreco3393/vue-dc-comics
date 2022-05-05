@@ -48,7 +48,7 @@ export default {
 <style lang="scss" scoped>
     .secondary_menu {
     width: 100%;
-    background-color: rgb(0, 130, 249);
+    background-color: $dc-primary;
     padding: 2rem;
 
     .wrapper{
@@ -56,7 +56,7 @@ export default {
         justify-content: center;
         align-items: center;
         font-size: 12px;
-        color: white;
+        color: $white;
         
     }
     img {
